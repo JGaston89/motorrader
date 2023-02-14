@@ -9,15 +9,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 45vh;
     background: #151515;
 }
 
 .card{
     position: relative;
-    width: 500px;
-    height: 500;
-    border-radius: 20px;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +24,7 @@ header{
     transition-delay: 0.5s;
 }
 
-.card:hover{
+ .card:hover{
     width: 600px;
     transition-delay: 0.5s;
 }
@@ -49,7 +48,7 @@ header{
     left: 0;
     width: 350px;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 50%;
     background: #191919;
     border: 8px solid var(--clr);
     filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
@@ -70,9 +69,67 @@ header{
     width: 250px;
     transition: 0.5s;
     transition-delay: 0.5s;
+    text-align: center;
 }
 
 .card:hover .circle .logo{
     transform: scale(0);
     transition-delay: 0s;
-} 
+}  
+
+.card .product_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50%) scale(0)rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img{
+    transition-delay: 0.75s;
+    top: 25%;
+    left: 75%;
+    height: 500px;
+    transform: translate(-50px, -50%) scale(1)rotate(15deg);
+}
+
+.card .content{
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p{
+    color: white;
+}
+
+.card .content a{
+    position: relative;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
