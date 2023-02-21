@@ -6,12 +6,15 @@
 }
 
 header{
+    margin-top: 5%;
     display: flex;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     min-height: 45vh;
-    background: #151515;
+    /* background: #151515; */
 }
+
 
 .card{
     position: relative;
@@ -79,10 +82,10 @@ header{
 
 .card .product_img{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 75%;
     transform: translate(-50px, -50%) scale(0)rotate(315deg);
-    height: 300px;
+    height: 100px;
     transition: 0.5s ease-in-out;
 }
 
@@ -132,4 +135,27 @@ header{
     text-decoration: none;
     font-weight: 600;
     margin-top: 10px;
+}
+
+/*==============MEDIA QUERIS (MEDIUM DEVICES)=============*/
+
+@media screen and (max-width:1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+}
+
+
+/*==============MEDIA QUERIS (MEDIUM DEVICES)=============*/
+
+@media screen and (max-width:600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+    section > h2 {
+        margin-bottom: 2rem;
+    }
 }

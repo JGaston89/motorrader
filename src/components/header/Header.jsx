@@ -1,21 +1,32 @@
 import React from 'react'
 import './header.css'
-import logohonda from '../../assets/logohonda.png'
+import hondabike from '../../assets/hondabike.png'
+import rider from '../../assets/rider.png'
+// import allbrands from '../../assets/allbrands.png'
 
 const Header = () => {
   return (
     <header>
-        <div className="card">
+    
+        <div className="card">  
             <div className="circle">
-                <h1 className="logo">MOTORRADER</h1>
-            </div>  
-            <div className='content'>
-                <h2>Bienvenidos</h2>
-                <p>Lorem ipsum.</p>
-                <a href="#">Ir a</a>
+              <div className="logo">
+              <h1 >MOTORRADER</h1>
+              <img src={hondabike} alt="" />
             </div>
-            <img src={logohonda} className="product_img" alt="" />         
+            </div> 
+            <div class="content">
+              <h2>Bienvenido</h2>
+              <p>Trabajamos con los mejores repuestos de la ciudad y capital federal. Productos y merchandaise de todo el pais</p>
+              <a href="#">Conocenos</a>
+            </div>
+            <img src={rider} className="product_img" />         
         </div>
+      
+        {/* <div className='marcas'>
+        <img src={allbrands} alt="" />
+        </div> */}
+
     </header>
   )
 }
