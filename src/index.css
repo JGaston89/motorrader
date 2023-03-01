@@ -18,6 +18,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --clr:#f40103;
+    --bg-rgb: rgba(28 , 28, 38, 0.7) ;
 
 
     --transition: all 400ms ease;
@@ -40,7 +41,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white); 
     line-height: 1.7;
-    /* background-image: url(../src/assets/bgtexture4.jpg); */
+    background-image: url(../src/assets/background.jpg);
 
 }
 

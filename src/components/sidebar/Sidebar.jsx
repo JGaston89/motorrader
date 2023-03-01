@@ -9,37 +9,21 @@ import {GiFullMotorcycleHelmet} from 'react-icons/gi'
 import { useState } from 'react'
 
 
-const data = 
-[
-    {
-       "title": "Indumentaria",
-       "icon": "<GiClothes/>",
-       "Childrens":[{       
-            "title": "Remeras",
-            "icon": "{FaTshirt}"
-        },
-        {
-            "title": "Chombas",
-            "icon": "{GiShirt}"
-        }
-       ]
-    }
-]
-
 
 
 export default function Sidebar(){
-    const [open, setOpen] = useState(false) 
+    const [open, setOpen] = useState(false)
+    
   return (
-    <sidebar className='sidebar'>
-        <div className={open ? "sidebar-item open" : "sidebar-item"}>
-                <div className='sidebar-title'>
-                    <span className='brand'><a href="#">
-                    <GiClothes/></a>Indumentaria
-                        <i className='bi-chevron-down toggle-btn' onClick={() => setOpen(!open)}>
-                        </i>
-                    </span>
-                </div>
+<sidebar className='sidebar'>
+    <div className={open ? "sidebar-item open" : "sidebar-item"}>
+        <div className='sidebar-title'>
+            <span className='brand'><a href="#">
+            <GiClothes/></a>Indumentaria
+            <i className='bi-chevron-down toggle-btn' onClick={() => setOpen(!open)}>
+            </i>
+            </span>
+        </div>
             <div className='sidebar-content'>
                 <ul className='tools'>
                     <li>
@@ -47,9 +31,7 @@ export default function Sidebar(){
                             <FaTshirt/>
                         <span>Remeras</span>    
                         </a>
-          
                     </li>
-        
                     <li>
                         <a href="#">
                             <GiPoloShirt/>
@@ -71,49 +53,56 @@ export default function Sidebar(){
                 </ul>
             </div>
 
+    </div>
+    
+    <hr />
 
-            <hr />
-            <div className={open ? "sidebar-item open" : "sidebar-item"}></div>
-                <div className='sidebar-title'>       
-                    <span className='brand'><a href="#">
-                    <GiFullMotorcycleHelmet/></a>Cascos <i className='bi-chevron-down toggle-btn' onClick={() => setOpen(!open)}></i></span>
-                </div>
-                <div className='sidebar-content'>
-                <ul className='tools'>
-                    <li>
-                        <a href="#">
-                            <GiFullMotorcycleHelmet/>
-                        <span>Honda</span>    
-                        </a>
-                    </li>
+    <div className={open ? "sidebar-item open" : "sidebar-item"}>
+        <div className='sidebar-title'>       
+            <span className='brand'><a href="#">
+            <GiFullMotorcycleHelmet/></a>Cascos <i className='bi-chevron-down toggle-btn' onClick={() => setOpen(!open)}></i></span>
+        </div>
+        <div className='sidebar-content'>
+            <ul className='tools'>
+                <li>
+                    <a href="#">
+                        <GiFullMotorcycleHelmet/>
+                    <span>Honda</span>    
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="#">
-                            <GiFullMotorcycleHelmet/>
-                        <span>Yamaha</span>    
-                        </a>
-                    </li>
+                <li>
+                    <a href="#">
+                        <GiFullMotorcycleHelmet/>
+                    <span>Yamaha</span>    
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="#">
-                            <GiFullMotorcycleHelmet/>
-                        <span>BMW</span>    
-                        </a>
-                    </li>
+                <li>
+                    <a href="#">
+                        <GiFullMotorcycleHelmet/>
+                    <span>BMW</span>    
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="#">
-                            <GiFullMotorcycleHelmet/>
-                        <span>Mercedes</span>    
-                        </a>
-                    </li>
-                </ul>
-                </div>
-            </div>   
-            
-    </sidebar>
+                <li>
+                    <a href="#">
+                        <GiFullMotorcycleHelmet/>
+                    <span>Mercedes</span>    
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>   
+    
+</sidebar>
   )
 }
 
 
 /* VIDEO "https://www.youtube.com/watch?v=sOhLV-lfgjs&list=LL&index=8&t=86s"*/ 
+
+
+/*ver
+
+https://www.youtube.com/watch?v=QnykUEqAVoc&list=LL&index=8 */

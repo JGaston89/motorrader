@@ -1,5 +1,5 @@
 footer {
-    /* background: var(--color-bg-variant); */
+    background: #3f2c6c59;
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -7,7 +7,7 @@ footer {
 }
 
 footer a {
-    color: var(--color-bg);
+    color: var(--color-bg-variant);
 }
 
 .footer__logo {

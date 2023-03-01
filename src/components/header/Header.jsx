@@ -15,7 +15,7 @@ const Header = () => {
               <img src={hondabike} alt="" />
             </div>
             </div> 
-            <div class="content">
+            <div className="content">
               <h2>Bienvenido</h2>
               <p>Trabajamos con los mejores repuestos de la ciudad y capital federal. Productos y merchandaise de todo el pais</p>
               <a href="#">Conocenos</a>
